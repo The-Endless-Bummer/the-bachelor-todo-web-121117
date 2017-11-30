@@ -48,8 +48,8 @@ def get_average_age_for_season(data, season)
     age_total += person["age"].to_i
   end
   if age_total%number_of_contestants < 1
-    (age_total/number_of_contestants)
+    return (age_total/number_of_contestants)
   else
-    ((age_total/number_of_contestants) + 1)
+    return ((age_total/number_of_contestants) + 1)
   end
 end
